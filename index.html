@@ -3,7 +3,56 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>مربع الدراما</title>
+<title>مربع الدراما | مسلسلات، أخبار، رياضة</title>
+
+<!-- ================= SEO ================= -->
+<meta name="description" content="مربع الدراما - موقعك الأول لمشاهدة أحدث المسلسلات والأخبار العاجلة والرياضة. تابع آخر المستجدات الفنية والأخبار الحصرية مجاناً.">
+<meta name="keywords" content="مربع الدراما, مسلسلات, مسلسلات عربية, مسلسلات تركية, مسلسلات رمضان, أخبار, أخبار عاجلة, رياضة, أخبار رياضية, ميسي, كرة القدم, مشاهدة مسلسلات, drama square, دراما, أفلام, أخبار العراق, أخبار عربية, مشاهدة مباشرة">
+<meta name="author" content="مربع الدراما">
+<meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow">
+<meta name="language" content="Arabic">
+<meta name="revisit-after" content="1 days">
+<meta name="rating" content="general">
+
+<!-- Google Site Verification -->
+<meta name="google-site-verification" content="-EbHQalpMMEJXQXijKe71Ilw89gzSTEZQKtsSjBw9S4" />
+
+<!-- Open Graph (فيسبوك) -->
+<meta property="og:title" content="مربع الدراما | مسلسلات، أخبار، رياضة">
+<meta property="og:description" content="موقعك الأول لمشاهدة أحدث المسلسلات والأخبار العاجلة والرياضة. تابع آخر المستجدات الفنية والأخبار الحصرية مجاناً.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="مربع الدراما">
+<meta property="og:image" content="https://i.ibb.co/bgL5PyHy/Picsart-26-05-17-15-01-36-647.webp">
+<meta property="og:locale" content="ar_AR">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="مربع الدراما | مسلسلات، أخبار، رياضة">
+<meta name="twitter:description" content="موقعك الأول لمشاهدة أحدث المسلسلات والأخبار العاجلة والرياضة.">
+<meta name="twitter:image" content="https://i.ibb.co/bgL5PyHy/Picsart-26-05-17-15-01-36-647.webp">
+
+<!-- Canonical URL -->
+<meta name="theme-color" content="#12151c">
+
+<!-- Schema.org (بيانات منظمة لجوجل) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "مربع الدراما",
+  "alternateName": "Mraba Drama",
+  "description": "موقعك الأول لمشاهدة أحدث المسلسلات والأخبار العاجلة والرياضة",
+  "inLanguage": "ar",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://dramasquare.com/?s={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<!-- ================= /SEO ================= -->
+
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -55,7 +104,7 @@ a { text-decoration: none; color: inherit; }
 .logo { max-height: 48px; width: auto; display: block; }
 .header-left { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
 
-/* ★ زر القائمة بدون خلفية */
+/* زر القائمة بدون خلفية */
 .menu-btn {
   background: none;
   border: none;
@@ -797,18 +846,18 @@ a { text-decoration: none; color: inherit; }
   <div class="header-container">
     <div class="header-right">
       <div class="logo-wrap">
-        <img src="https://i.ibb.co/bgL5PyHy/Picsart-26-05-17-15-01-36-647.webp" alt="مربع الدراما" class="logo">
+        <img src="https://i.ibb.co/bgL5PyHy/Picsart-26-05-17-15-01-36-647.webp" alt="مربع الدراما - شعار الموقع" class="logo" title="مربع الدراما">
       </div>
     </div>
     <div class="header-left">
-      <button class="menu-btn" aria-label="القائمة" onclick="openDrawer()">
+      <button class="menu-btn" aria-label="فتح القائمة" onclick="openDrawer()">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
 </header>
 
-<nav class="main-nav">
+<nav class="main-nav" aria-label="التنقل الرئيسي">
   <div class="nav-container">
     <ul class="nav-list">
       <li><a href="#" class="active" data-section="series">مسلسلات</a></li>
@@ -824,7 +873,7 @@ a { text-decoration: none; color: inherit; }
 
 <div class="modal" id="modal">
   <div class="modal-content" id="modalContent">
-    <button type="button" class="modal-close" id="modalCloseBtn">✕</button>
+    <button type="button" class="modal-close" id="modalCloseBtn" aria-label="إغلاق">✕</button>
     <div id="modalBody"></div>
   </div>
 </div>
